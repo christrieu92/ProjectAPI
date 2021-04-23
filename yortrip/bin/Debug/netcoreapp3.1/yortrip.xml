@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>yortrip</name>
+    </assembly>
+    <members>
+        <member name="M:yortrip.Controllers.CalendarController.GetCalendars(System.Guid)">
+            <summary>
+            Gets all the calendars in the system
+            </summary>
+            <returns>List of Calendars</returns>
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.GetCalendar(System.Guid)">
+            <summary>
+            Get a specific calendar from the list
+            </summary>
+            <param name="calendarId"></param>
+            <returns>Single calendar</returns>
+            Get api/calendar/{calendarid}
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.GetCalendarUnavailability(System.Guid,System.String,System.String)">
+            <summary>
+            Get unavailable dates for a calendarId
+            </summary>
+            <param name="calendarId"></param>
+            <param name="duration"></param>
+            <param name="userIds"></param>
+            <returns>Get available dates for a calendarId</returns>
+            Get api/calendar/{calendarid}/unavailability/{duration}
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.GetCalendarAvailabilityRange(System.Guid,System.String,System.String)">
+            <summary>
+            Get available date ranges for a calendarId
+            </summary>
+            <param name="calendarId"></param>
+            <param name="duration"></param>
+            <param name="userIds"></param>
+            <returns>Get available dates for a calendarId</returns>
+            Get api/calendar/{calendarid}/availability/{duration}
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.GetCalendarAvailability(System.Guid,System.String,System.String)">
+            <summary>
+            Get available date ranges for a calendarId
+            </summary>
+            <param name="calendarId"></param>
+            <param name="duration"></param>
+            <param name="userIds"></param>
+            <returns>Get available dates for a calendarId</returns>
+            Get api/calendar/{calendarid}/availability/{duration}
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.AddCalendar(System.Guid,yortrip.Dto.CalendarCreateDto)">
+            <summary>
+            Adds a calendar from the dto to the system
+            </summary>
+            <param name="calendarCreateDto"></param>
+            <param name="userId"></param>
+            <returns>Add calendar</returns>
+            POST api/calendar/{userid}
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.UpdateCalendar(System.Guid,yortrip.Dto.CalendarCreateDto)">
+            <summary>
+            Updates the calendar based on the calendarId
+            </summary>
+            <param name="calendarId"></param>
+            <param name="calendarUpdateDto"></param>
+            <returns>No content</returns>
+            Put api/calendar/{calendarid}
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.PartialCalendarUpdate(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{yortrip.Dto.CalendarCreateDto})">
+            <summary>
+            Updates a partial (specific) part of the calendar
+            </summary>
+            <param name="calendarId"></param>
+            <param name="patchCalendar"></param>
+            <returns>No content</returns>
+            Patch api/calendar/{calendarid}
+        </member>
+        <member name="M:yortrip.Controllers.CalendarController.DeleteCalendar(System.Guid)">
+            <summary>
+            Delete a calendar entry
+            </summary>
+            <param name="calendarId"></param>
+            <returns>No content</returns>
+            Delete api/calendar/{calendarid}
+        </member>
+        <member name="M:yortrip.Controllers.InviteController.GetInviteCalendar(System.Guid)">
+            <summary>
+            Get a calendar based on the calendarId
+            </summary>
+            <param name="calendarId"></param>
+            <returns>Single Calendar</returns>
+            Get api/invite/calendar/{calendarId}
+        </member>
+        <member name="M:yortrip.Controllers.InviteController.GetInviteeByEmail(System.Guid)">
+            <summary>
+            Get a specific user from the list
+            </summary>
+            <param name="userId"></param>
+            <returns>Single user</returns>
+            Get api/invite/user/{userId}
+        </member>
+        <member name="M:yortrip.Controllers.InviteController.AddInviteCalendar(System.Guid,yortrip.Dto.InviteeCalendarDto)">
+            <summary>
+            Adds a invitee calendar
+            </summary>
+            <param name="calendarId"></param>
+            <param name="inviteeCalendarDto"></param>
+            <returns>Add Invite Calendar</returns>
+            POST api/invite
+        </member>
+        <member name="M:yortrip.Controllers.InviteController.GetInvitedUsersByCalendar(System.Guid)">
+            <summary>
+            Get list of user associated to the calendar
+            </summary>
+            <param name="calendarId"></param>
+            <returns>Single user</returns>
+            Get api/user/invite/calendar/{calendarId}
+        </member>
+        <member name="M:yortrip.Controllers.InviteController.GetInviteCalendarUnavailability(System.Guid,System.String,System.String)">
+            <summary>
+            Get Invite Unavailability Calendar
+            </summary>
+            <param name="calendarId"></param>
+            <param name="duration"></param>
+            <param name="userIds"></param>
+            <returns>Get Invite Unavailability Calendar</returns>
+            GET api/invite
+        </member>
+        <member name="M:yortrip.Controllers.InviteController.GetInviteCalendarAvailabilityRange(System.Guid,System.String,System.String)">
+            <summary>
+            Get Invite Unavailability Calendar
+            </summary>
+            <param name="calendarId"></param>
+            <param name="duration"></param>
+            <param name="userIds"></param>
+            <returns>Get Invite Unavailability Calendar</returns>
+            GET api/invite
+        </member>
+        <member name="M:yortrip.Controllers.InviteController.GetInviteCalendarAvailability(System.Guid,System.String,System.String)">
+            <summary>
+            Get Invite Availability Calendar
+            </summary>
+            <param name="calendarId"></param>
+            <param name="duration"></param>
+            <param name="userIds"></param>
+            <returns>Get Availabilities Calendar</returns>
+            GET api/invite
+        </member>
+        <member name="M:yortrip.Controllers.NotificationController.GetNotifications(System.Guid)">
+            <summary>
+            Gets all the notifications for a calendar
+            <param name="userId"></param>
+            </summary>
+            <returns>List of Notifications</returns>
+        </member>
+        <member name="M:yortrip.Controllers.NotificationController.AddNotification(System.Guid,System.Guid)">
+            <summary>
+            Adds notification
+            </summary>
+            <param name="calendarId"></param>
+            <param name="userId"></param>
+            <returns>Add Notification</returns>
+            POST api/calendar/{userid}
+        </member>
+        <member name="M:yortrip.Controllers.NotificationController.UpdateNotification(System.Guid,System.String)">
+            <summary>
+            Update notification
+            </summary>
+            <param name="userId"></param>
+            <param name="notificationKey"></param>
+            <returns>Update Notification</returns>
+            Put api/notification/{notificationId}
+        </member>
+        <member name="M:yortrip.Controllers.NotificationController.GetNotificationKey(System.Guid)">
+            <summary>
+            Get notification key
+            </summary>
+            <param name="userId"></param>
+            <returns>Update Notification</returns>
+            Put api/notification/{notificationId}
+        </member>
+        <member name="M:yortrip.Controllers.UserController.GetUserByEmail(System.String)">
+            <summary>
+            Get a specific user from the list
+            </summary>
+            <param name="email"></param>
+            <returns>Single user</returns>
+            Get api/user/{userId}
+        </member>
+        <member name="M:yortrip.Controllers.UserController.GetUsersByCalendar(System.Guid)">
+            <summary>
+            Get list of user associated to the calendar
+            </summary>
+            <param name="calendarId"></param>
+            <returns>Single user</returns>
+            Get api/user/{userId}
+        </member>
+        <member name="M:yortrip.Controllers.UserController.AddUser(yortrip.Dto.UserDto)">
+            <summary>
+            Adds a user from the dto to the system
+            </summary>
+            <param name="userDto"></param>
+            <returns>Add user</returns>
+            POST api/user
+        </member>
+        <member name="M:yortrip.Controllers.UserController.UpdateUser(System.Guid,yortrip.Dto.UserDto)">
+            <summary>
+            Updates the user based on the userId
+            </summary>
+            <param name="userId"></param>
+            <param name="userDto"></param>
+            <returns>No content</returns>
+            Put api/calendar/{userId}
+        </member>
+        <member name="M:yortrip.Controllers.UserController.PartialUserUpdate(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{yortrip.Dto.UserDto})">
+            <summary>
+            Updates a partial (specific) part of the user
+            </summary>
+            <param name="userId"></param>
+            <param name="patchUser"></param>
+            <returns>No content</returns>
+            Patch api/user/{userId}
+        </member>
+        <member name="M:yortrip.Controllers.UserController.DeleteUser(System.Guid)">
+            <summary>
+            Delete a user entry
+            </summary>
+            <param name="userId"></param>
+            <returns>No content</returns>
+            Delete api/user/{userId}
+        </member>
+    </members>
+</doc>

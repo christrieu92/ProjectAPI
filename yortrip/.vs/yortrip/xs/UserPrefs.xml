@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{AEC00381-8F28-4435-872D-C2CFA35453BE}|Default">
+  <MonoDevelop.Ide.ItemProperties.yortrip PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="yortrip/appsettings.json">
+    <Files>
+      <File FileName="yortrip/appsettings.json" Line="4" Column="26" IsPinned="True" />
+      <File FileName="yortrip/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="yortrip" expanded="True">
+            <Node name="yortrip" expanded="True">
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200618011222_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200618011222_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200709010320_User_Calendar.cs" />
+    <Compile Remove="Migrations\20200709010320_User_Calendar.Designer.cs" />
+    <Compile Remove="Migrations\20200803234652_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200803234652_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200803234937_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200803234937_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200803235229_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200803235229_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200804000216_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200804000216_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200804000856_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200804000856_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200804005532_InitialMigration.cs" />
+    <Compile Remove="Migrations\20200804005532_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200806020103_sp_pUnavailabilities.cs" />
+    <Compile Remove="Migrations\20200806020103_sp_pUnavailabilities.Designer.cs" />
+    <Compile Remove="Migrations\20200902223729_Notification.cs" />
+    <Compile Remove="Migrations\20200902223729_Notification.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="FirebaseAdmin" Version="1.15.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <UserSecretsId>75191345-ac9e-419a-8d78-e2528edadb32</UserSecretsId>
+  </PropertyGroup>
+
+</Project>
